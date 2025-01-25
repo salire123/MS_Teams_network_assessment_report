@@ -23,7 +23,7 @@ class Data_cleaning_and_preprocessing:
     This class is used to clean and preprocess the data.
     folder_path: The path to the folder containing the data files.
     """
-    def __init__(self, folder_path->str):
+    def __init__(self, folder_path: str):
         self.folder_path = folder_path
         self.data = None
         self.datatype = {

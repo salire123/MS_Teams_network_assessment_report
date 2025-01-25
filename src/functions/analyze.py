@@ -18,10 +18,10 @@ from base import Data_cleaning_and_preprocessing
 
 #LossRate-%,AverageLatency-Ms,AverageJitter-Ms
 class analyze_data:
-    def __init__(self, data):
+    def __init__(self, data: pd.DataFrame):
         self.data = data #list of dataframes
 
-    def analyze_every_date_medians(self, column_name):
+    def analyze_every_date_medians(self, column_name: str):
         analyze_medians = pd.DataFrame(columns=['Timestamp-UTC', column_name])
         for df in self.data:
             # Empty DataFrame
@@ -32,7 +32,7 @@ class analyze_data:
 
         return analyze_medians
     
-    def analyze_every_date_means(self, column_name):
+    def analyze_every_date_means(self, column_name: str):
         analyze_means = pd.DataFrame(columns=['Timestamp-UTC', column_name])
         for df in self.data:
             # Empty DataFrame
@@ -43,7 +43,7 @@ class analyze_data:
 
         return analyze_means
     
-    def analyze_every_date_95percentiles(self, column_name):
+    def analyze_every_date_95percentiles(self, column_name: str):
         analyze_95percentiles = pd.DataFrame(columns=['Timestamp-UTC', column_name])
         for df in self.data:
             # Empty DataFrame
