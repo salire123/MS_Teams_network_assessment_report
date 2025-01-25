@@ -9,12 +9,13 @@
 # Created: 26-1-2025
 # Last Modified: 26-1-2025
 
+#version 0.1
+
 ###
 
 import pandas as pd
 import numpy as np
 import os
-from base import Data_cleaning_and_preprocessing
 
 #LossRate-%,AverageLatency-Ms,AverageJitter-Ms
 class analyze_data:
@@ -56,6 +57,8 @@ class analyze_data:
 
 # test the code
 if __name__ == '__main__':
+    from data_processing import Data_cleaning_and_preprocessing
+
     data = Data_cleaning_and_preprocessing('data/172-16-52-20')
     data.get_data()
     office_hours, non_office_hours = data.daily_office_hours()

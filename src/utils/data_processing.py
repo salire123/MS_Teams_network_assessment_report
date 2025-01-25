@@ -9,6 +9,8 @@
 # Created: 26-1-2025
 # Last Modified: 26-1-2025
 
+#version 0.1
+
 ###
 
 
@@ -21,7 +23,13 @@ import glob
 class Data_cleaning_and_preprocessing:
     """
     This class is used to clean and preprocess the data.
-    folder_path: The path to the folder containing the data files.
+
+    Args:
+        folder_path: The path to the folder containing the data files.
+    Functions:
+        .data: The DataFrame containing the data from the CSV files.
+        .get_data: This function reads the data from the CSV files in the folder and combines them into a single DataFrame.
+        .daily_office_hours: This function return the data into office hours and non-office hours for each day.
     """
     def __init__(self, folder_path: str):
         self.folder_path = folder_path
@@ -66,7 +74,9 @@ class Data_cleaning_and_preprocessing:
                 return
             
             dfs = (pd.read_csv(file) for file in csv_files)
-            self.data = pd.concat(dfs, ignore_index=True, errors='coerce')
+            self.data = pd.concat(dfs, ignore_index=True)
+            print(f"Data loaded successfully. Shape: {self.data.shape}")
+            print(self.data.head())
             self.data_type()
 
         except OSError as e:
@@ -132,9 +142,8 @@ class Data_cleaning_and_preprocessing:
 # test the class
 if __name__ == '__main__':
     data = Data_cleaning_and_preprocessing('data/172-16-52-20')
-    data.get_data()
+    data.get_data()    
     output = data.data
-    print(output)
     print(output.dtypes)
     office_hours, non_office_hours = data.daily_office_hours()
     print(office_hours) #list of dataframes
