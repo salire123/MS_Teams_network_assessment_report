@@ -1,9 +1,15 @@
+# .gitignore
 
+# environment
 .venv
 .vscode
-data/*
-output/*
 
+# folders
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+
+# Python bytecode
 __pycache__
 *.pyc
-.selfenv

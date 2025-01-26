@@ -1,0 +1,73 @@
+Network Performance Report
+===========================
+
+Data Summary:
+       LossRate-%_medians  AverageLatency-Ms_medians  AverageJitter-Ms_medians  LossRate-%_means  AverageLatency-Ms_means  AverageJitter-Ms_means  LossRate-%_95percentiles  AverageLatency-Ms_95percentiles  AverageJitter-Ms_95percentiles
+count                 8.0                   8.000000                  8.000000          8.000000                 8.000000                8.000000                  8.000000                         8.000000                        8.000000
+mean                  0.0                  50.274375                  3.234375          0.024910                56.345826                7.559215                  0.055000                        82.500437                       32.911562
+std                   0.0                  13.577717                  0.764897          0.020927                 7.703971                3.927265                  0.155563                        15.041091                       24.879429
+min                   0.0                  37.480000                  1.840000          0.002444                44.911000                4.157889                  0.000000                        47.353000                        8.243500
+25%                   0.0                  46.847500                  2.845000          0.015944                51.349847                4.786403                  0.000000                        83.089125                        8.821500
+50%                   0.0                  47.035000                  3.525000          0.018417                56.658611                5.901778                  0.000000                        85.397250                       31.765500
+75%                   0.0                  47.161250                  3.678750          0.025264                62.167056                9.422528                  0.000000                        87.653500                       48.521375
+max                   0.0                  82.850000                  4.140000          0.068944                66.951556               14.994000                  0.440000                        97.231500                       75.803500
+
+Daily Metrics:
+            LossRate-%_medians  AverageLatency-Ms_medians  AverageJitter-Ms_medians  LossRate-%_means  AverageLatency-Ms_means  AverageJitter-Ms_means  LossRate-%_95percentiles  AverageLatency-Ms_95percentiles  AverageJitter-Ms_95percentiles
+Date                                                                                                                                                                                                                                             
+2023-10-30                 0.0                     47.070                     3.780          0.012278                52.299667                4.940167                      0.00                          83.1520                          8.8555
+2023-10-31                 0.0                     46.435                     1.840          0.019611                44.911000                4.325111                      0.00                          47.3530                          8.7195
+2023-11-01                 0.0                     47.135                     3.520          0.068944                62.846056               14.994000                      0.44                          97.2315                         75.8035
+2023-11-02                 0.0                     37.480                     3.530          0.017167                48.500389                6.663111                      0.00                          82.9005                         41.6020
+2023-11-03                 0.0                     82.850                     3.645          0.041889                66.951556                8.718556                      0.00                          85.9065                         47.9730
+2023-11-04                 0.0                     47.000                     2.440          0.017222                59.863889                5.140444                      0.00                          86.0210                         21.9290
+2023-11-05                 0.0                     47.240                     2.980          0.002444                53.453333                4.157889                      0.00                          84.8880                          8.2435
+2023-11-06                 0.0                     46.985                     4.140          0.019722                61.940722               11.534444                      0.00                          92.5510                         50.1665
+
+Key Metrics Analysis:
+- LossRate-%_medians:
+  - Minimum: 0.0
+  - Maximum: 0.0
+  - Average: 0.0
+
+- AverageLatency-Ms_medians:
+  - Minimum: 37.48
+  - Maximum: 82.85
+  - Average: 50.274375
+
+- AverageJitter-Ms_medians:
+  - Minimum: 1.84
+  - Maximum: 4.140000000000001
+  - Average: 3.234375
+
+- LossRate-%_means:
+  - Minimum: 0.0024444444444444
+  - Maximum: 0.0689444444444444
+  - Average: 0.024909722222222173
+
+- AverageLatency-Ms_means:
+  - Minimum: 44.911
+  - Maximum: 66.95155555555556
+  - Average: 56.34582638888889
+
+- AverageJitter-Ms_means:
+  - Minimum: 4.1578888888888885
+  - Maximum: 14.994
+  - Average: 7.559215277777778
+
+- LossRate-%_95percentiles:
+  - Minimum: 0.0
+  - Maximum: 0.44
+  - Average: 0.055
+
+- AverageLatency-Ms_95percentiles:
+  - Minimum: 47.352999999999966
+  - Maximum: 97.2315
+  - Average: 82.50043749999999
+
+- AverageJitter-Ms_95percentiles:
+  - Minimum: 8.2435
+  - Maximum: 75.80349999999977
+  - Average: 32.91156249999993
+
+End of Report
